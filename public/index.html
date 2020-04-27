@@ -19,34 +19,83 @@
           
         </div>
        <div class="links col-sm-4 col-md-5 justify-content-around d-none d-sm-flex">
-         <div>
-           <p>map</p>
+         <div class="first">
+           <a href="#map"><p>map</p></a>
+           
          </div>
-         <div>
-          <p>les apps</p>
+         <div class="second">
+           <a href="#apps">
+            <p>les apps</p>
+           </a>
         </div>
        </div>
       </div>
       
     </div>
-    <div class="landingPage">
+    <div id="map" class="landingPage">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 col-md-6 d-flex justify-content-center">
-            <div class="description">
-              <div class="text">
-                <p>Marre de galérer à trouver une trotinnette en sortant de soirée?</p>
-                <h2>we've got you</h2>
+            <div>
+              <div class="description">
+                <div class="text">
+                  <p>Marre de galérer à trouver une trotinnette en sortant de soirée?</p>
+                  <h2>we've got you</h2>
+                </div>
               </div>
+              <div class="contact d-none d-md-block">
+                <p>CONTACTEZ-NOUS</p>
+              </div>
+
             </div>
-            
-            
           </div>
           <div class="col-12 col-md-6 d-flex justify-content-center">
             <div class="map ">map</div>
           </div>
         </div>
       </div>
+    </div>
+    <div id="apps" class="appPage">
+      <div class="appTitle d-flex justify-content-center w-100">
+        <p class="d-none d-md-block">Retrouvez vos trotinettes préférées dès maintenant</p>
+        <div class="titleBlock d-block d-md-none">
+          <p>Retrouvez vos trotinettes préférées dès maintenant</p>
+    
+        </div>
+      </div>
+      
+      <div class="container-fluid apps">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="d-flex justify-content-center justify-content-md-end ">
+              <img src="..\assets\images\lime.png" alt="">
+              <img src="..\assets\images\lime.png" alt="">
+            </div>
+            <div class="d-flex justify-content-center justify-content-md-end">
+              <img src="..\assets\images\lime.png" alt="">
+              <img src="..\assets\images\lime.png" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="d-flex justify-content-center justify-content-md-start ">
+              <img src="..\assets\images\lime.png" alt="">
+              <img src="..\assets\images\lime.png" alt="">
+
+            </div>
+            <div class="d-flex justify-content-center justify-content-md-start">
+              <img src="..\assets\images\lime.png" alt="">
+              <img src="..\assets\images\lime.png" alt="">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="d-flex d-md-none justify-content-center">
+        <div class="contactBottom">
+          <p>CONTACTEZ-NOUS</p>
+        </div>
+      </div>
+      
     </div>
     
     <script src="./src/index.js"></script>
@@ -55,6 +104,9 @@
 </html>
 
 <style>
+  html{
+    scroll-behavior: smooth;
+  }
   body{
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
@@ -101,11 +153,133 @@
   text-align: center;
 }
   .links{
+    padding-top: 20px;
   }
+
   .map{
     width:500px;
     height:500px;
-    background-color: grey;
+    background-color: rgb(201, 201, 201);
+  }
+
+
+
+  .appPage{
+    padding-top:120px;
+  }
+  .titleBlock{
+    text-align: center;
+    padding-top: 20px;
+    width:200px;
+    height:auto;
+    border: #FEEE1C solid 1px;
+  }
+  .apps{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+  .apps img{
+    height:120px;
+    width:auto;
+    margin: 20px;
+    
+  }
+  .contactBottom{
+    background-color: #FEEE1C;
+    width:180px;
+    padding-top: 10px;
+    height:40px;
+    text-align: center;
+  }
+@media (min-width:1200px){
+
+}
+@media (min-width:992px){
+  .landingPage{
+    padding-top: 180px;
+  }
+  .title h1{
+    font-size: 30px;
+  }
+  .title p{
+    font-size: 25px;
+  }
+  .title{
+    padding-left:200px;
+
+  }
+  .links{
+    font-size: 25px;
+  }
+  .description{
+    width:350px;
+    height:auto;
+    
+  }
+  .description p{
+    font-size: 20px;
+  }
+  .description h2{
+    font-size: 25px;
+  }
+  .logo{
+    height:150px;
+    width:auto;
+  }
+
+.apps img{
+  height:150px;
+  width: auto;
+  margin:40px;
+}
+}
+@media (max-width: 768px){
+  .landingPage{
+      padding-top: 70px;
+
+    }
+    .apps img{
+  height: 120px;
+  width: auto;
+}
+}
+@media (min-width: 768px){
+  .appTitle p{
+    font-size: 20px;
+  }
+}
+  @media (max-width:480px) {
+   
+    .logo{
+      height:60px;
+      width:auto;
+    }
+    .title{
+      padding-left:80px;
+    }
+    .title h1{
+      font-size: 18px;
+    }
+    .title p{
+      font-size: 12px;
+    }
+    .map{
+      width:270px;
+      height:270px;
+    }
+    .description{
+      height:250px;
+      width:250px;
+    }
+    .description h2{
+      font-size: 25px;
+    }
+    .apps img{
+  height: 90px;
+  width: auto;
+}
+
   }
 </style>
 

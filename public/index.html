@@ -1,10 +1,111 @@
 <!doctype html>
 <html>
   <head>
-    <title>Getting Started</title>
+    <title>Find my trott.</title>
     <script src="bundle.js"></script>
-  </head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
   <body>
+    <div class="navbar container-fluid">
+      <div class="row w-100">
+        <div class=" col-sm-8 col-md-7 col-12 d-flex">
+          <img src="..\assets\images\logoBig.jpg" class="logo" alt="Find my Trott Logo">
+          <div class="title">
+            <h1>Find my trott.</h1>
+          <p>we've got you</p>
+          </div>
+          
+        </div>
+       <div class="links col-sm-4 col-md-5 justify-content-around d-none d-sm-flex">
+         <div>
+           <p>map</p>
+         </div>
+         <div>
+          <p>les apps</p>
+        </div>
+       </div>
+      </div>
+      
+    </div>
+    <div class="landingPage">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex justify-content-center">
+            <div class="description">
+              <div class="text">
+                <p>Marre de galérer à trouver une trotinnette en sortant de soirée?</p>
+                <h2>we've got you</h2>
+              </div>
+            </div>
+            
+            
+          </div>
+          <div class="col-12 col-md-6 d-flex justify-content-center">
+            <div class="map ">map</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <script src="./src/index.js"></script>
+   
   </body>
 </html>
+
+<style>
+  body{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+  .landingPage{
+    padding-top: 150px;
+  }
+  .navbar{
+    position:fixed;
+    height:auto;
+    background-color: #FEEE1C;
+    z-index:2;
+    padding-top:20px;
+
+  }
+  .navbar h1{
+    font-size: 20px;
+  
+  }
+  .logo{
+    border-radius: 50%;
+    height:100px;
+    width:auto;
+    position: absolute;
+  }
+  .title{
+    padding-left: 120px;
+  }
+  .description{
+    margin-top: 50px;
+    margin-bottom:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    width:300px;
+    background-color: #FEEE1C;
+    padding-top:70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+  }
+.text{
+  text-align: center;
+}
+  .links{
+  }
+  .map{
+    width:500px;
+    height:500px;
+    background-color: grey;
+  }
+</style>
+

@@ -1,1 +1,1 @@
-document.write("Je débute avec Webpack !");
+alert("Je débute avec Webpack !");
